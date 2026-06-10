@@ -1,0 +1,17 @@
+class Account {
+
+    void withdraw(double amount) {
+        System.out.println("Withdraw Successful");
+    }
+}
+
+class SavingsAccount extends Account {
+}
+
+class FixedDepositAccount extends Account {
+
+    @Override
+    void withdraw(double amount) {
+        throw new UnsupportedOperationException();
+    }
+}
