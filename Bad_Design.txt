@@ -1,0 +1,9 @@
+class EmployeeService{
+    public void calculateSalary(){
+        System.out.println("Calculate salary of employee");
+    }
+    
+    public void saveEmployee(){
+         System.out.println("save employee to database");
+    }
+}
