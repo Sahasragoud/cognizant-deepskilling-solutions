@@ -1,0 +1,11 @@
+class EmailService {
+
+    public void sendNotification(String type) {
+
+        if(type.equals("EMAIL"))
+            System.out.println("Email");
+
+        if(type.equals("SMS"))
+            System.out.println("SMS");
+    }
+}
