@@ -1,0 +1,16 @@
+class PetrolEngine {
+
+    public void start() {
+        System.out.println("Petrol Engine Started");
+    }
+}
+
+class Car {
+
+    private PetrolEngine engine =
+            new PetrolEngine();
+
+    public void startCar() {
+        engine.start();
+    }
+}
