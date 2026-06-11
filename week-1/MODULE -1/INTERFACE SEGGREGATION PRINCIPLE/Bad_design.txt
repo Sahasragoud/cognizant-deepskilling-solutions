@@ -1,0 +1,33 @@
+
+class Main {
+    public static void main(String[] args) {
+        Shape sq = new Square();
+        sq.area();
+        
+        Cube cube = new Cube();
+        cube.area();
+        
+    }
+}
+
+interface Shape{
+    void area();
+}
+
+class Square implements Shape{
+    public void area(){
+     System.out.println("Prints area of square");
+    }
+}
+
+
+class Cube implements Shape{
+    public void area(){
+     throw new RuntimeException("cannot perform this operation");
+    }
+    
+    public void volume(){
+     System.out.println("Prints volume of cube");
+    }
+    
+}
