@@ -1,4 +1,4 @@
-class Main {
+class EagerIntialization {
     public static void main(String[] args) {
         
         AppConfig config1 = AppConfig.getInstance();
