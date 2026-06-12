@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        
+        AppConfig config1 = new AppConfig();
+        AppConfig config2 = new AppConfig();
+        
+        if(config1 == config2){
+            System.out.println("Yeah both are refering to same object");
+        }
+    }
+}
+
+class AppConfig{
+    
+}
