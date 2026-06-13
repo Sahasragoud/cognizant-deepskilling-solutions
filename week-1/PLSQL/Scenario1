@@ -1,0 +1,18 @@
+DECLARE
+    CURSOR c_customers IS
+        SELECT CustomerID,
+               FLOOR(MONTHS_BETWEEN(SYSDATE, DOB)/12) Age
+        FROM Customers;
+
+BEGIN
+    FOR rec IN c_customers LOOP
+        IF rec.Age > 60 THEN
+            UPDATE Loans
+            SET InterestRate = InterestRate - 1
+            WHERE CustomerID = rec.CustomerID;
+        END IF;
+    END LOOP;
+
+    COMMIT;
+END;
+/
