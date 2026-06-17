@@ -20,7 +20,7 @@ ON Transactions
 FOR EACH ROW
 BEGIN
     INSERT INTO AuditLog VALUES
-    (1, :New.TransactionID, 'INSERT', SYSDATE);
+    (AuditLogSeq.NEXT, :New.TransactionID, 'INSERT', SYSDATE);
 END;
 /
 
