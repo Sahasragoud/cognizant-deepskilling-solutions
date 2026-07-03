@@ -1,0 +1,36 @@
+"C:\Program Files\Microsoft\jdk-21.0.5.11-hotspot\bin\java.exe" "-javaagent:D:\requirements\IntelliJ IDEA 2026.1.3\lib\idea_rt.jar=58497" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\Sahasra Muthyala\Downloads\InventoryManagementSystem\target\classes" com.employeeManagement.system.Main
+Employee added successfully.
+Employee added successfully.
+
+Employee{
+    employeeId=101,
+    name='Shalini',
+    position='Asst Manager',
+    salary=65000.0
+}
+Employee{
+    employeeId=102,
+    name='Veda',
+    position='HR',
+    salary=59000.0
+}
+
+Employee updated successfully.
+
+Employee{
+    employeeId=102,
+    name='Veda',
+    position='Manager',
+    salary=1095364.0
+}
+
+Employee deleted successfully.
+
+Employee{
+    employeeId=102,
+    name='Veda',
+    position='Manager',
+    salary=1095364.0
+}
+
+Process finished with exit code 0
